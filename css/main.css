@@ -1,0 +1,136 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    font-family: sans-serif;
+    background-image: url(../img/parallax/BG.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header {
+    height: 50px;
+    width: 100%;
+    background-color: #222222;
+    margin: 0 auto;
+}
+
+#logo {
+    float: left;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+#logo a {
+    font-size: 1.3em;
+    color: white;
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+}
+/*
+#nav { 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#nav li{
+    float: left;  
+}*/
+
+#sidebar {
+    width: 250px;
+    background-color: #171717;
+    float: left;
+}
+
+#nav {
+    list-style: none;
+    position: sticky;
+    top: 0;
+    
+}
+
+#nav li a {
+    font-size: 0.8em;
+    color: #ccc;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #0a0a0a;
+    transition: all 0.2s;
+}
+
+#nav li a:hover {
+    background-color: #030303;
+    color: #fff;
+}
+
+#selected {
+    background-color: #03030303;
+    color: #fff;
+}
+
+#content {
+    width: auto;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+#mobile {
+    display: block;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    padding: 7px;
+    border-bottom: 1px solid #0a0a0a;
+    cursor: pointer;
+}
+
+#mobile:active {
+    background-color: #4a4a4a;
+}
+
+@media only screen and (max-width: 320px) {
+    #sidebar {
+        width: 100%;
+        display: none;
+    }
+    #content {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (min-width:320px) {
+    #sidebar {
+        height: 100%;
+        display: block;
+    }
+    #mobile {
+        display: none;
+    }
+}
+
+/* Parallax */
+
+.d1 {
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+.d2 {
+    margin-top: 200px;
+    margin-left: 1400px;
+}
+

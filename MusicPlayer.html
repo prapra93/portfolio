@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <link href="css/musicPlayer.css" rel="stylesheet" />
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <title>FROMABOVE - MUSIC PLAYER</title>
+</head>
+
+<body>
+
+    <div id="bg">
+        <div id="blackLayer"></div>
+        <img src="img/Poster1.jpg" />
+    </div>
+
+    <div id="main">
+        <div id="image">
+            <img src="img/Poster1.jpg" />
+        </div>
+        <div id="player">
+            <div id="songTitle">Demo</div>
+            <div id="buttons">
+                <button id="pre" onclick="pre()">
+                    <img src="img/Pre.png" height="90%" width="90%" />
+                </button>
+                <button id="play" onclick="playOrSong()">
+                    <img src="img/Pause.png" />
+                </button>
+                <button id="next" onclick="next()">
+                    <img src="img/Next.png" height="90%" width="90%" />
+                </button>
+            </div>
+
+            <div id="seekBar">
+                <div id="fill"></div>
+                <div id="handle"></div>
+            </div>
+
+            <div id="currentTime">00:00 / 00:00</div>
+
+            <div id="volume">
+                <button id="decrease" onclick="decreaseVolume()">-</button>
+                <div id="volumeIcon">
+                    <img src="img/Speaker.png" />
+                </div>
+                <button id="increase" onclick="increaseVolume()">+</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="js/javascript.js"></script>
+
+</html>

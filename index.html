@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/rellax.js"></script>
+    <title>PORTFOLIO</title>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <div id="header">
+        <div id="logo">
+            <a href="#">PORTFOLIO</a>
+        </div>
+    </div>
+
+    <div id="mobile">MENU</div>
+
+    <div id="container">
+        <div id="sidebar">
+            <ul id="nav">
+                <li>
+                    <a href="index.html" id="selected">Home</a>
+                </li>
+                <li>
+                        <a href="login.html" id="selected">Login Page</a>
+                </li>
+                <li>
+                    <a href="MusicPlayer.html">Music Player Page</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- PARALLAX -->
+
+    <div class="rellax d1">
+        <img src="img/parallax/msg.png" />
+    </div>
+
+    <div class="rellax d2" data-rellax-speed="6">
+        <img src="img/parallax/logo.png" />
+    </div>
+
+</body>
+
+<script>var rellax = new Rellax('.rellax', {
+        
+            callback: function(position) {
+        
+            }
+        });</script>
+
+</html>
