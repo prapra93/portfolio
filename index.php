@@ -1,5 +1,7 @@
 <html>
-
+<?php
+    session_start();
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,13 +25,23 @@
                 <a href="index.html">Home</a>
             </li>
             <li>
-                <a href="login.html">Login Page</a>
-            </li>
-            <li>
                 <a href="MusicPlayer.html">Music Player Page</a>
             </li>
             <li>
                 <a href="#">About</a>
+            </li>
+            <li>
+            <?php
+                if (isset($_SESSION['userId'])){
+                    echo '<form action="includes/logout.inc.php" method="post">
+                            <button id="btn" type="submit" name="logout-submit">LOGOUT</button>
+                          </form>';
+                } else {
+                    echo '<a href="login.php">Login</a>';
+                }
+            ?>
+            
+                
             </li>
         </ul>
 
@@ -43,13 +55,30 @@
     <div id="resize">
             <ul id="menu">
                   <li><a href="index.html">Home</a></li>
-                  <li><a href="login.html">Login Page</a></li>
                   <li><a href="MusicPlayer.html">Music Player Page</a></li>
                   <li><a href="#">About</a></li>
+                  <li>
+                  <?php
+                  if (isset($_SESSION['userId'])){
+                      echo '<form action="includes/logout.inc.php" method="post">
+                              <button id="btn" type="submit" name="logout-submit">LOGOUT</button>
+                            </form>';
+                  } else {
+                      echo '<a href="login.php">Login</a>';
+                  }
+              ?>
+            </li>
             </ul>
       </div>
 
       <div class="content">
+            <?php
+                if (isset($_SESSION['userId'])){
+                    echo '<h1>YOU ARE LOGGED IN~</h1>';
+                } else {
+                    echo '<h1>YOU ARE LOGGED OUT~</h1>';
+                }
+            ?>
             <h1>CREATIVITY KNOWS NO BOUNDS</h1>
             <h1 id="lightgrey">#BECREATIVE</h1>
             <h1 id="grey">#STAYCREATIVE</h1>
@@ -58,12 +87,5 @@
       <script src="js/index.js"></script>
 
 </body>
-
-<script>var rellax = new Rellax('.rellax', {
-
-        callback: function (position) {
-
-        }
-    });</script>
 
 </html>

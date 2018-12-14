@@ -1,24 +1,6 @@
-$(document).ready(function(){
-    $("#mobile").click(function(){
-        $("#sidebar").slideToggle('fast');
-    });
+$("#toggle").click(function () {
 
-    window.onresize = function(event) {
-        if ($(window).width() > 320) {
-            $("#sidebar").show();
-        }
-        if ($(window).width() < 320) {
-            $("#sidebar").hide();
-        }
-    };
-    
-});
+    $(this).toggleClass('on');
+    $("#resize").toggleClass("active");
 
-/* parallax */
-
-var rellax = new Rellax('.rellax', {
-
-    callback: function(position) {
-
-    }
 });
