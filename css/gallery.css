@@ -1,0 +1,20 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black
+}
+
+a img {
+    height: 35%;
+    width: 30%;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+#size {
+    height: 200px;
+    width: 200px
+}

@@ -17,18 +17,21 @@
 
     <nav>
         <span id="brand">
-            <a href="index.html">Portfolio</a>
+            <a href="index.php">Portfolio</a>
         </span>
 
         <ul id="menu">
             <li>
-                <a href="index.html">Home</a>
+                <a href="index.php">Home</a>
             </li>
             <li>
                 <a href="MusicPlayer.html">Music Player Page</a>
             </li>
+			<li>
+                <a href="gallery.html">Gallery</a>
+            </li>
             <li>
-                <a href="#">About</a>
+                <a href="about.html">About</a>
             </li>
             <li>
             <?php
@@ -56,7 +59,8 @@
             <ul id="menu">
                   <li><a href="index.html">Home</a></li>
                   <li><a href="MusicPlayer.html">Music Player Page</a></li>
-                  <li><a href="#">About</a></li>
+				  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="about.html">About</a></li>
                   <li>
                   <?php
                   if (isset($_SESSION['userId'])){

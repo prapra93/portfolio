@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet" />
+    <link href="css/gallery.css" rel="stylesheet" />
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+</head>
+
+<body>
+    <center>
+        <img id="size" src="img/gallery/LOGOSTUDIO.png">
+    </center>
+
+    <center>
+
+        <a data-fancybox="gallery" href="img/gallery/smoke0.png" data-caption="Smoke">
+            <img src="img/gallery/smoke0.png">
+        </a>
+
+        <a data-fancybox="gallery" href="img/gallery/aloha.jpg" data-caption="No Filter">
+            <img src="img/gallery/aloha.jpg">
+        </a>
+
+        <a data-fancybox="gallery" href="img/gallery/aloha.png" data-caption="Brandon Woelfel style">
+            <img src="img/gallery/aloha.png">
+        </a>
+
+        <a data-fancybox="gallery" href="img/gallery/test.gif" data-caption="Snow gif">
+            <img src="img/gallery/test.gif">
+        </a>
+
+        <a data-fancybox="gallery" href="img/gallery/zoomeffect.gif" data-caption="Zoom Effect">
+            <img src="img/gallery/zoomeffect.gif">
+        </a>
+
+        <a data-fancybox="gallery" href="img/gallery/glitch.gif" data-caption="Glitch">
+            <img src="img/gallery/glitch.gif">
+        </a>
+        
+        <a data-fancybox="gallery" href="img/gallery/flower.png" data-caption="White Rose">
+            <img src="img/gallery/flower.png">
+        </a>
+
+        <a data-fancybox="gallery" href="img/gallery/hasowi.png" data-caption="LOGO FOR HASOWI">
+            <img src="img/gallery/hasowi.png">
+        </a>
+
+        <a data-fancybox="gallery" href="img/gallery/hoodieModel2.png" data-caption="Hoodie">
+            <img src="img/gallery/hoodieModel2.png">
+        </a>
+
+    </center>
+
+    <script type="text/javascript">
+        $('[data-fancybox]').fancybox({
+            loop: true,
+            buttons: [
+                "zoom",
+                "share",
+                "slideShow",
+                "fullScreen",
+                "download",
+                "thumbs",
+                "close"
+            ],
+            animationEffect: "zoom-in-out",
+            transitionEffect: "circular"
+        });
+    </script>
+
+</body>
+
+</html>
